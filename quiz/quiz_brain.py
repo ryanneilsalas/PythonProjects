@@ -21,7 +21,6 @@ class Quiz_brain:
 
     def check_answer(self, user_answer):
         correct_answer = self.question_list[self.question_number-1]
-        print(f"question number:{user_answer} question list:{correct_answer.answer}")
         if user_answer.lower() == correct_answer.answer.lower():
             self.score += 1
             return True
